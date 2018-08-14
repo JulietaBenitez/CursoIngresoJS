@@ -1,0 +1,60 @@
+
+var estacion;
+var temperatura;
+var mensaje;
+
+estacion = prompt('Ingrese estación (verano, otoño, invierno, primavera)');
+temperatura = parseInt(prompt('Ingrese la temperatura en número'));
+
+switch(estacion) {
+case 'invierno':
+if(temperatura >= 1 && temperatura <= 5){
+// alert('Qué fresquete');
+mensaje = 'Qué fresquete';
+}
+
+break;
+
+case 'primavera':
+if(temperatura > 32){
+// alert('Es un horno');
+mensaje = 'Es un horno';
+}
+else if(temperatura > 20) {
+// alert('Qué calorcito')
+mensaje = 'Qué calorcito';
+}
+
+break;
+case 'otoño':
+if(temperatura === 15) {
+// alert('Está lindo');
+mensaje = 'Está lindo'
+}
+else if(temperatura < 15) {
+// alert('Se vino el frio');
+mensaje = 'se vino el frio';
+}
+else if(temperatura > 15 && temperatura < 21){
+// alert('Está re bueno');
+mensaje = 'esta re bueno'
+}
+
+break;
+
+case 'verano':
+if(temperatura > 32){
+// alert('Es un horno');
+mensaje = 'es un horrno'
+} else if(temperatura > 20) {
+mensaje = 'que calorcito'
+// alert('Qué calorcito')
+}
+
+break;
+
+default: 
+mensaje = 'ingresaste una estacion no valida'
+//alert('Ingresaste una estacion no valida');
+break;
+}

@@ -1,0 +1,15 @@
+
+var ancho;
+var largo;
+var perimetro;
+var cantidadPintura;
+ancho = parseInt(prompt('Ingrese el ancho'));
+largo = parseInt(prompt('Ingrese el largo'));
+
+perimetro = (ancho *2 + largo *2);
+cantidadPintura = perimetro/3;
+alert('El perimetro es de ' + perimetro + 'metros' + 'Se necesitan esta cantidad de litros de pintura: ' + cantidadPintura );
+
+// 1 litro de pintura se pinta 3 metros lineales
+//informar el perimetro 
+//cantidad de litros que se deben comprar para pintarlo todo
